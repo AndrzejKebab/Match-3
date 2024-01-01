@@ -2,7 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 
-namespace PatataStudio
+namespace PatataStudio.MatchGame
 {
 	public class GridSystem2D<T>
 	{

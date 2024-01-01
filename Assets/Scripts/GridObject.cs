@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PatataStudio
+namespace PatataStudio.MatchGame
 {
 
 	public class GridObject<T>
@@ -10,12 +10,18 @@ namespace PatataStudio
 		private int y;
 		private T gem;
 
-		public GridObject(GridSystem2D<GridObject<T>> grid, int x, int y, T gem)
+		public GridObject(GridSystem2D<GridObject<T>> grid, int x, int y)
 		{
 			this.grid = grid;
 			this.x = x;
 			this.y = y;
+		}
+
+		public void SetValue(T gem)
+		{
 			this.gem = gem;
 		}
+
+		public T GetValue() => gem;
 	}
 }
